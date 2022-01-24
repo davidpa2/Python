@@ -51,4 +51,51 @@ print(5 not in miLista3) # Devuelte True
 print(12 in miLista3) # Devuelte True
 
 #Declaración de una matriz
-tablero = [["EMPTY" for i in range(8)] for j in range(8)]
+tablero = [["3" for i in range(8)] for j in range(8)]
+
+# None sirve para saber que una variable no tiene valor, está nula
+valor = None
+if valor == None:
+    print("Lo siento, no tienes ningún valor") 
+
+
+#TUPLAS
+miTupla = (1, 10, 100, 1000)
+
+print(miTupla[0])
+print(miTupla[-1])
+print(miTupla[1:])
+print(miTupla[:-2])
+
+for elem in miTupla:
+    print(elem)
+
+miTupla2 = (1, 10, 100)
+
+t1 = miTupla2 + (1000, 10000)
+t2 = miTupla2 * 3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in miTupla2)
+print(-10 not in miTupla2) #Devuelve False ya que la posición -10 no está en la tupla
+
+
+#DICCIONARIOS (como los arrays asociativos en PHP)
+dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+numerosTelefono = {'jefe' : 5551234567, 'Suzy' : 22657854310}
+diccionarioVacio = {}
+
+print(dict)
+print(numerosTelefono)
+print(diccionarioVacio)
+
+dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+#Trae como clave-valor todas los valores de la tupla
+for spanish, french in dict.items():
+    print(spanish, "->", french)
+
+#Añadir un elemento
+dict['gato'] = 'minou'
+print(dict)
