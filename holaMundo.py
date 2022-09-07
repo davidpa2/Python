@@ -37,12 +37,13 @@ print(numeros[-2]) #Mostrará 2
 numeros.append(6)
 #Insertar un nuevo elemento a la lista en una posición específica
 numeros.insert(4,8) #(ubicación,valor)
+print("Contenido de la lista:", numeros) # imprimiendo contenido de la lista original.
 #Ordenar lista
 miLista2 = [8, 10, 6, 2, 4]
+numeros.sort() 
+print('Primera lista ordenada: ',numeros)
 miLista2.sort() 
-print(miLista2)
-miLista2.sort() 
-print(miLista2)
+print('Segunda lista ordeanda: ', miLista2)
 # Comprobar si un elemento está en una lista o si no lo está:
 miLista3 = [0, 3, 12, 8, 2]
 
@@ -52,6 +53,7 @@ print(12 in miLista3) # Devuelte True
 
 #Declaración de una matriz
 tablero = [["3" for i in range(8)] for j in range(8)]
+print(tablero)
 
 # None sirve para saber que una variable no tiene valor, está nula
 valor = None
@@ -98,4 +100,6 @@ for spanish, french in dict.items():
 
 #Añadir un elemento
 dict['gato'] = 'minou'
+print(dict)
+dict['pájaro'] = 'oiseau'
 print(dict)
