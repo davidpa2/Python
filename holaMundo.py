@@ -4,7 +4,7 @@ print("holaaa world!!");
 '''
 Comentario multilinea
 '''
-print("Fundamentos","Programación","en",sep="***",end="...")
+print("Fundamentos","Programación","en",sep="***",end="...") #Argumentos de palabra clave: sep="" end=""
 print("Python")
 
 #Uso de input y casteo
